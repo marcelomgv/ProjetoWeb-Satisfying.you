@@ -23,7 +23,7 @@
         <div class="chose">
           <p>Tem certeza de apagar essa pesquisa?</p>
           <div class="op">
-            <a href="Home.html" class="sim">SIM</a>
+            <a href="Home.html" class="sim" onclick="ApagarPesquisa()">SIM</a>
             <a href="#" class="canc">CANCELAR</a>
           </div>
         </div>
@@ -48,10 +48,10 @@
       <br>
       <label for="imagem">Imagem</label>
       <div class="arq">
-        <input class="nome-arq" type="text" id="imagem"></input>
-        <label class="custom-file"><input type="file" id="imagem">Escolher arquivo</label>
+        <input class="nome-arq" type="text" id="imagem-desc" onchange="preview()"></input>
+        <label class="custom-file"><input type="file" id="imagem-car" onchange="previewcar()">Escolher arquivo</label>
       </div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1Idv8osdL7QRgEBhCce_uSU7lkvVB97Hx1zPb922if4MPQrT" class="image">
+      <img id="image">
 
       <div class="submit">
         <a href="Home.html" onclick="ModificarPesquisa()" class="but">Salvar</a>
