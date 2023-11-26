@@ -1,0 +1,100 @@
+* {
+  font-family: 'Averia Libre', cursive;
+}
+
+body {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  background-color: #372775;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+#logo {
+  font-size: 70px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+form {
+  width: 40%;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #737373;
+  border-radius: 15px;
+  padding-top: 57px;
+  padding-right:50px;
+  padding-left: 50px;
+  padding-bottom: 60px;
+  font-size: 40px
+}
+
+.login{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.field {
+  height: 55px;
+  font-size: 35px;
+  padding-left: 15px;
+}
+
+.junt {
+  margin-top: 2px;
+}
+
+.form-invalido{
+  font-size: 26px;
+  color: #FD7979;
+  float: left;
+}
+
+.form-esqueci{
+  font-size: 26px;
+  color:  #3F92C5;
+  float: right;
+  text-decoration: none;
+}
+
+.boton{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 95px;
+}
+
+.form-criar{
+  color:  #3F92C5;
+  font-size: 32px;
+}
+
+.btcolor{
+  width: 220px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #37BD6D;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
