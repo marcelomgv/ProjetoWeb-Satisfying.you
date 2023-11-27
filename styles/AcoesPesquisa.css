@@ -4,12 +4,13 @@
 }
 
 body {
-    padding: 5vh;
+    padding: 2.5vw;
     background-color: #372775;
     color: white;
 }
 
 .head {
+    font-size: 1.7vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,17 +20,15 @@ body {
 }
 
 #logo {
-    font-size: 500%;
+    font-size: 4.5vw;
 }
 
 .sair {
     color:#3F92C5;
-    font-size: 220%;
 }
 
 main {
-    width: 100%;
-    margin-top: 17vh;
+    margin-top: 7vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,19 +36,29 @@ main {
 
 .bloco {
     background-color: #312464;
-    border-radius: 17px;
-    width: 50vh;
-    height: 47vh;
+    border-radius: 0.7vw;
+    width: 25vw;
+    height: 23vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 390%;
+    font-size: 3vw;
     text-align: center;
     text-decoration: none;
     color:white;
 }
 
 #img {
-    font-size: 390%;
+    font-size: 12vw;
+}
+
+@media (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
 }

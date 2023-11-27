@@ -4,16 +4,15 @@
 }
 
 body {
-    padding: 5vh;
+    padding: 2.5vw;
     background-color: #372775;
     color: white;
 }
 
 header {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
-    font-size: 220%;
+    font-size: 1.7vw;
     align-items: center;
 }
 
@@ -22,15 +21,14 @@ header {
 }
 
 main {
-    margin-top: 25vh;
-    margin-bottom: 20vh;
-    font-size: 420%;
+    margin-top: 11vw;
+    margin-bottom: 9vw;
+    font-size: 4.5vw;
     text-align: center;
 }
 
 footer {
-    width: 100%;
-    font-size: 150%;
+    font-size: 1.2vw;
     text-align: right;
     color: #888888;
 }
