@@ -1,13 +1,10 @@
 * {
     font-family: 'Averia Libre', cursive;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding: 5vh;
     background-color: #372775;
     color: white;
 }
@@ -16,7 +13,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    font-size: 30px;
+    font-size: 220%;
     align-items: center;
 }
 
@@ -30,13 +27,13 @@ header {
 
 main {
     text-align: center;
-    font-size: 70px;
-    margin-top: 100px;
+    font-size: 420%;
+    margin-top: 12vh;
 }
 
 .opcoes {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 15vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -48,35 +45,37 @@ main {
     text-decoration: none;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 100%;
 }
 
 #pessimo {
-    font-size: 180px;
+    font-size: 275%;
     color: #D71616;
-    margin-bottom: 10px;
 }
 
 #ruim {
-    font-size: 180px;
+    font-size: 275%;
     color: #FF360A;
-    margin-bottom: 10px;
 }
 
 #neutro {
-    font-size: 180px;
+    font-size: 275%;
     color: #FFC632;
-    margin-bottom: 10px;
 }
 
 #bom {
-    font-size: 180px;
+    font-size: 275%;
     color: #37BD6D;
-    margin-bottom: 10px;
 }
 
 #excelente {
-    font-size: 180px;
+    font-size: 275%;
     color: #25BC22;
-    margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .opcoes{
+        display: flex;
+        flex-direction: column;
+    }
 }

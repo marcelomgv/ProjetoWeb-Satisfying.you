@@ -1,10 +1,10 @@
 * {
     font-family: 'Averia Libre', cursive;
-    margin: 0px;
+    margin: 0;
 }
 
 body {
-    padding: 5vh;
+    padding: 3vw;
     background-color: #372775;
     color: white;
 }
@@ -13,14 +13,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 1.7vw;
     align-items: center;
     text-decoration: none;
     color: white;
 }
 
 #logo{
-    font-size: 70px;
+    font-size: 4.5vw;
 }
 
 .sair {
@@ -29,24 +29,24 @@ body {
 
 .novapesquisa {
     background-color: #37BD6D;
-    border-radius: 10px;
-    margin-right: 4vh;
-    width: 24vh;
-    height: 6vh;
+    border-radius: 0.7vw;
+    margin-right: 2vw;
+    width: 13vw;
+    height: 3.3vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2vw;
     text-decoration: none;
     color: white;
 }
 
 #pesquisa {
-    margin-top: 6vh;
+    margin-top: 3vw;
     padding-left: 1%;
     width: 100%;
-    height: 6vh;
-    font-size: 30px;
+    height: 3.3vw;
+    font-size: 2vw;
     font-family:'FontAwesome', 'Averia Libre', cursive;
 }
 
@@ -55,24 +55,25 @@ body {
 }
 
 article {
-    width: 46vh;
-    height: 43vh;
+    width: 25vw;
+    height: 23vw;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.7vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3vh;
+    padding: 1vw;
+    flex-shrink: 0;
 }
 
 #main {
-    margin-top: 11vh;
+    margin-top: 5vw;
     display: flex;
     flex-direction: row;
     overflow: scroll;
     overflow-x: hidden;
-    gap: 6vh;
+    gap: 3vw;
 }
 
 #main:hover{
@@ -89,29 +90,31 @@ article {
 
 #main::-webkit-scrollbar-thumb {
     background-color: gray;
-    border-radius: 20px;
+    border-radius: 1vw;
 }
 
 img {
     width: 80%;
-    height: 27vh;
-    margin-bottom: 1vh;
+    height: 65%;
+    margin-bottom: 0.5vw;
 }
 
 h6 {
-    font-size: 60px;
+    font-size: 3.2vw;
     color: #3F92C5;
-    margin-bottom: 1vh;
 }
 
 p {
-    font-size: 30px;
+    font-size: 1.2vw;
     color: #8B8B8B;
 }
 
 @media (max-width: 500px) {
-    main{
+    #main{
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
 }
