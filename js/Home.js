@@ -15,7 +15,7 @@ window.onload = () => {
         for (const item of itens) {
             const nomeItem = item.querySelector("h6").innerHTML.toLowerCase();
             if (nomeItem.includes(termoBusca)) {
-                item.style.display = "block";
+                item.style.display = "flex";
             } else {
                 item.style.display = "none";
             }

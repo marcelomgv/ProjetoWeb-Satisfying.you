@@ -1,13 +1,10 @@
 * {
     font-family: 'Averia Libre', cursive;
+    margin: 0px;
 }
 
 body {
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding: 5vh;
     background-color: #372775;
     color: white;
 }
@@ -22,7 +19,7 @@ body {
     color: white;
 }
 
-#logo {
+#logo{
     font-size: 70px;
 }
 
@@ -33,9 +30,9 @@ body {
 .novapesquisa {
     background-color: #37BD6D;
     border-radius: 10px;
-    margin-right: 25px;
-    width: 250px;
-    height: 50px;
+    margin-right: 4vh;
+    width: 24vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +42,10 @@ body {
 }
 
 #pesquisa {
-    margin-top: 55px;
+    margin-top: 6vh;
     padding-left: 1%;
-    width: 99%;
-    height: 50px;
+    width: 100%;
+    height: 6vh;
     font-size: 30px;
     font-family:'FontAwesome', 'Averia Libre', cursive;
 }
@@ -58,24 +55,24 @@ body {
 }
 
 article {
-    width: 480px;
-    height: 450px;
+    width: 46vh;
+    height: 43vh;
     background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    margin-right: 65px;
+    padding: 3vh;
 }
 
 #main {
-    margin-top: 120px;
+    margin-top: 11vh;
     display: flex;
     flex-direction: row;
     overflow: scroll;
     overflow-x: hidden;
+    gap: 6vh;
 }
 
 #main:hover{
@@ -97,17 +94,24 @@ article {
 
 img {
     width: 80%;
-    height: 280px;
-    margin-bottom: 15px;
+    height: 27vh;
+    margin-bottom: 1vh;
 }
 
 h6 {
     font-size: 60px;
     color: #3F92C5;
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 
 p {
     font-size: 30px;
     color: #8B8B8B;
+}
+
+@media (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
 }
