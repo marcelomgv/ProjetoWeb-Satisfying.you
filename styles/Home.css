@@ -36,7 +36,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-decoration: none;
     color: white;
 }
@@ -71,7 +71,6 @@ article {
     margin-top: 5vw;
     display: flex;
     flex-direction: row;
-    overflow: scroll;
     overflow-x: hidden;
     gap: 3vw;
 }
@@ -111,10 +110,12 @@ p {
 
 @media (max-width: 500px) {
     #main{
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        gap: 6vw;
+    }
+
+    article {
+        width: calc(50% - 15vw);
     }
 }
