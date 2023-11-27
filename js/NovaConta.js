@@ -1,29 +1,56 @@
 // NovaConta.js
-const cadastrarUsuario = () => {
-    const email = document.getElementById("email").value;
-    const senha = document.getElementById("senha").value;
-    const repsenha = document.getElementById("repsenha").value;
+
+const exibirMensagemErro = (mensagem) => {
+  const mensagemErro = document.getElementById("mensagemErro");
+  mensagemErro.innerHTML = mensagem;
+  mensagemErro.style.display = "block";
+}
+
+const cadastrarUsuario = (event) => {
+  event.preventDefault();
   
-    if (senha !== repsenha) {
-      alert("Senhas não conferem");
-      return;
-    }
+  const email = document.getElementById("email").value;
+  const senha = document.getElementById("senha").value;
+  const repsenha = document.getElementById("repsenha").value;
+
+  const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
+  const usuarioExistente = listaUsuarios.find(usuario => usuario.email === email);
+
+  if(usuarioExistente){
+    exibirMensagemErro("E-mail já cadastrado");
+    // Limpar os campos após exibir a mensagem de erro
+    document.getElementById("email").value = "";
+    document.getElementById("senha").value = "";
+    document.getElementById("repsenha").value = "";
+    return;
+  }
+  if (senha !== repsenha) {
+    exibirMensagemErro("Senhas não conferem");
+    // Limpar os campos após exibir a mensagem de erro
+    document.getElementById("senha").value = "";
+    document.getElementById("repsenha").value = "";
+    return;
+  }
+
+  listaUsuarios.push({
+    email: email,
+    senha: senha
+  });
+
+  localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
+
+  // Redirecionar para a página desejada após o cadastro
+  window.location.href = 'Index.html';
+  alert('Cadastro realizado com sucesso!');
+};
+
+window.onload = () => {
+  console.log("Página totalmente carregada.");
   
-    const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
-  
-    listaUsuarios.push({
-      email: email,
-      senha: senha
-    });
-  
-    localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
-  
-    // Redirecionar para a página desejada após o cadastro
-    window.location.href = 'Index.html';
-    alert('Cadastro realizado com sucesso!');
-  };
-  
-  window.onload = () => {
-    document.getElementById("btnCriar").addEventListener("click", cadastrarUsuario);
-  };
-  
+  const btnCriar = document.getElementById("btnCriar");
+  if (btnCriar) {
+    btnCriar.addEventListener("click", cadastrarUsuario);
+  } else {
+    console.error("Elemento com ID 'btnCriar' não encontrado.");
+  }
+};

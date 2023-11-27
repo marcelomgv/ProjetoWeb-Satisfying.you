@@ -5,8 +5,8 @@
 body {
   margin: 0;
   padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 20px;
   background-color: #372775;
   color: white;
@@ -21,80 +21,103 @@ header {
 }
 
 #logo {
-  font-size: 70px;
+  font-size: 5vw;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;  
 }
 
 form {
-  width: 40%;
-  height: 620px;
+  width: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   border: 1px solid #737373;
   border-radius: 15px;
-  padding-top: 57px;
-  padding-right:50px;
-  padding-left: 50px;
-  padding-bottom: 60px;
-  font-size: 40px
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  font-size: 4vw;
 }
 
-.login{
-  font-size: 40px;
+.login {
+  font-size: 4vw;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 2vw;
 }
 
 .field {
-  height: 55px;
-  font-size: 35px;
-  padding-left: 15px;
+  height: 5vw;
+  font-size: 3vw;
 }
 
 .junt {
   margin-top: 2px;
 }
 
-.form-invalido{
-  font-size: 26px;
+.form-invalido {
+  font-size: 2vw;
   color: #FD7979;
   float: left;
 }
 
-.form-esqueci{
-  font-size: 26px;
-  color:  #3F92C5;
+.form-esqueci {
+  font-size: 2vw;
+  color: #3F92C5;
   float: right;
   text-decoration: none;
 }
 
-.boton{
+.boton {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
-  margin-top: 95px;
+  justify-content: space-between;
+  margin-top: 5vw;
 }
 
-.form-criar{
-  color:  #3F92C5;
-  font-size: 32px;
+.form-criar {
+  color: #3F92C5;
+  font-size: 3vw;
 }
 
-.btcolor{
-  width: 220px;
-  height: 60px;
-  border-radius: 10px;
+.btcolor {
+  width: 20vw;
+  height: 5vw;
+  border-radius: 1vw;
   background-color: #37BD6D;
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 3vw;
+}
+
+/* Adicionada media query para telas pequenas (máximo de 600px) */
+@media only screen and (max-width: 600px) {
+  body {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  form {
+    width: 90%;
+    font-size: 6vw;
+  }
+
+  .field {
+    height: 7vw;
+    font-size: 4vw;
+  }
+
+  .boton {
+    margin-top: 10vw;
+  }
 }
