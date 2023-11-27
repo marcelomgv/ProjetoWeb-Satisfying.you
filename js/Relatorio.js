@@ -17,13 +17,13 @@ window.onload = () => {
     var data = {
         datasets: [{
             data: [pesq.pessimo, pesq.ruim, pesq.neutro, pesq.bom, pesq.excelente],
-            backgroundColor: ["#53D8D8", "#EA7288", "#5FCDA4", "#6994FE", "#F1CE7E"],
+            backgroundColor: ["#53D8D8", "#EA7288", "#5FCDA4", "#6994FE", "#F1CE7E"]
         }]
     };
 
     var options = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: false
     };
 
     var myPieChart = new Chart(grf, {

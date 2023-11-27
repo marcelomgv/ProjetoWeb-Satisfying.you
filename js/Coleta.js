@@ -1,3 +1,10 @@
+window.onload = () => {
+    var urlParams = new URLSearchParams(window.location.search)
+    const nome = decodeURIComponent(urlParams.get('conteudo'))
+    const tit = document.getElementById("nome-pesq")
+    tit.innerHTML = nome
+}
+
 const Coleta = (cod) => {
     var urlParams = new URLSearchParams(window.location.search)
     const nome = decodeURIComponent(urlParams.get('conteudo'))

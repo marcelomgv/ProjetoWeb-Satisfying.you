@@ -1,29 +1,26 @@
 * {
     font-family: 'Averia Libre', cursive;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding: 2.5vw;
     background-color: #372775;
     color: white;
 }
 
 .head {
+    font-size: 1.7vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 30px;
     align-items: center;
     text-decoration: none;
     color: white;
 }
 
 #logo {
-    font-size: 70px;
+    font-size: 4.5vw;
 }
 
 .sair {
@@ -31,8 +28,7 @@ body {
 }
 
 main {
-    width: 100%;
-    margin-top: 150px;
+    margin-top: 7vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -40,19 +36,29 @@ main {
 
 .bloco {
     background-color: #312464;
-    border-radius: 17px;
-    width: 26%;
-    height: 420px;
+    border-radius: 0.7vw;
+    width: 25vw;
+    height: 23vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 390%;
+    font-size: 3vw;
     text-align: center;
     text-decoration: none;
     color:white;
 }
 
 #img {
-    font-size: 390%;
+    font-size: 12vw;
+}
+
+@media (max-width: 500px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
 }
