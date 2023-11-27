@@ -5,6 +5,8 @@ window.onload = () => {
   };
   
   const autenticarUsuario = () => {
+    event.preventDefault();
+    
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
   
@@ -19,7 +21,16 @@ window.onload = () => {
 
     } else {
       // Exibir mensagem de erro
-      document.getElementById("erroLogin").style.display = "block";
+      exibirErroLogin("E-mail e/ou senha inválidos");
     }
+  };
+
+  const exibirErroLogin = (mensagem) => {
+    document.getElementById("erroLogin").innerHTML = mensagem;
+    document.getElementById("erroLogin").style.display = "block";
+  
+    // Limpar os campos após exibir a mensagem de erro
+    document.getElementById("email").value = "";
+    document.getElementById("senha").value = "";
   };
   

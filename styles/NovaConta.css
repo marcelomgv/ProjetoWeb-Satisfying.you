@@ -1,88 +1,111 @@
 * {
-    font-family: 'Averia Libre', cursive;
-  }
-  
+  font-family: 'Averia Libre', cursive;
+}
+
+body {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+  background-color: #372775;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+#logo {
+  font-size: 5vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;  
+}
+
+form {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #737373;
+  border-radius: 15px;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  font-size: 4vw;
+}
+
+.login {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.field {
+  height: 5vw;
+  font-size: 3vw;
+}
+
+.espaco {
+  margin-bottom: 2vw;
+}
+
+.form-invalido {
+  font-size: 2vw;
+  color: #FD7979;
+  float: left;
+  margin-top: 0.5vw;
+}
+
+.boton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5vw;
+}
+
+.btcolor {
+  width: 20vw;
+  height: 5vw;
+  border-radius: 1vw;
+  background-color: #37BD6D;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+/* Adicionada media query para telas pequenas (máximo de 600px) */
+@media only screen and (max-width: 600px) {
   body {
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    background-color: #372775;
-    color: white;
-  }
-  
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-  }
-  
-  #logo {
-    font-size: 70px;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-  }
-  
-  form {
-    width: 40%;
-    height: 620px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #737373;
-    border-radius: 15px;
-    padding-top: 57px;
-    padding-right:50px;
-    padding-left: 50px;
-    padding-bottom: 55px;
-    font-size: 38px
-  }
-  
-  .login{
-    font-size: 38px;
-    text-align: center;
-    margin-bottom: 26px;
-  }
-  
-  .field {
-    height: 55px;
-    font-size: 35px;
-    padding-left: 15px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
-  .espaco {
-    margin-bottom: 20px;
+  form {
+    width: 90%;
+    font-size: 6vw;
   }
-  
-  .form-invalido{
-    font-size: 25px;
-    color: #FD7979;
-    float: left;
-    margin-top: 2px;
+
+  .field {
+    height: 7vw;
+    font-size: 4vw;
   }
-  
-  .boton{
-    display: flex;
-    justify-content:flex-end;
-    margin-top: 50px;
+
+  .boton {
+    margin-top: 10vw;
   }
-  
-  .btcolor{
-    width: 220px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: #37BD6D;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-  }
+}

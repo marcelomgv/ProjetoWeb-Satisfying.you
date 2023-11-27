@@ -4,10 +4,7 @@
 
 body {
   margin: 0;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
+  padding: 5%;
   background-color: #372775;
   color: white;
 }
@@ -21,69 +18,67 @@ header {
 }
 
 #logo {
-  font-size: 70px;
+  font-size: 5vw;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 5%;
+  padding:  5%;
 }
 
 form {
-  width: 40%;
-  height: 530px;
+  width: 50%;
+  height: auto;
   display: flex;
   flex-direction: column;
   border: 1px solid #737373;
   border-radius: 15px;
-  padding-top: 57px;
-  padding-right:50px;
-  padding-left: 50px;
-  padding-bottom: 60px;
-  font-size: 35px
+  padding: 5%;
+  font-size: 4vw;
 }
 
-.tit{
-  font-size: 40px;
+.tit {
+  font-size: 4vw;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 2vw;
+
 }
 
-.subtit{
-  font-size: 33px;
+.subtit {
+  font-size: 3vw;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 2vw;
 }
-
 .field {
-  height: 55px;
-  font-size: 35px;
-  padding-left: 15px;
+  height: 5vw;
+  font-size: 3vw;
 }
 
-.form-invalido{
-  font-size: 26px;
+.form-invalido {
+  font-size: 2vw;
   color: #FD7979;
   margin-top: 3px;
+  display: none;
 }
-
-.boton{
+.boton {
   display: flex;
-  justify-content:flex-end;
-  margin-top: 110px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5vw;
 }
 
-.btcolor{
-  width: 220px;
-  height: 60px;
-  border-radius: 10px;
+.btcolor {
+  width: 20vw;
+  height: 5vw;
+  border-radius: 1vw;
   background-color: #37BD6D;
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  font-size: 3vw;
 }
