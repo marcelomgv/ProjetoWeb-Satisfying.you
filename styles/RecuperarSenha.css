@@ -18,7 +18,7 @@ header {
 }
 
 #logo {
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 main {
@@ -30,31 +30,31 @@ main {
 }
 
 form {
-  width: 50%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: column;
   border: 1px solid #737373;
   border-radius: 15px;
   padding: 5%;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 .tit {
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   margin-bottom: 2vw;
 
 }
 
 .subtit {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
   margin-bottom: 2vw;
 }
 .field {
   height: 5vw;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .form-invalido {
@@ -80,5 +80,5 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw;
+  font-size: 2vw;
 }

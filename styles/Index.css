@@ -18,7 +18,7 @@ header {
 }
 
 #logo {
-  font-size: 4.5vw;
+  font-size: 3vw;
 }
 
 main {
@@ -31,7 +31,7 @@ main {
 }
 
 form {
-  width: 80%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -41,18 +41,18 @@ form {
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 5%;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 .login {
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: center;
   margin-bottom: 2vw;
 }
 
 .field {
   height: 5vw;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .junt {
@@ -76,12 +76,12 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
 .form-criar {
   color: #3F92C5;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .btcolor {
@@ -94,7 +94,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 /* Adicionada media query para telas pequenas (máximo de 600px) */
@@ -105,13 +105,13 @@ form {
   }
 
   form {
-    width: 90%;
-    font-size: 6vw;
+    width: 60%;
+    font-size: 3vw;
   }
 
   .field {
     height: 7vw;
-    font-size: 4vw;
+    font-size: 2vw;
   }
 
   .boton {

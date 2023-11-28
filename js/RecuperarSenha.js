@@ -1,114 +1,22 @@
-// RecuperarSenha.js
-
-const recuperarSenha = () => {
-    const email = document.getElementById("email").value;
-
-    // Validar o formato do e-mail (simplificado)
-    if (!validateEmail(email)) {
-        exibirErroRecuperarSenha("Formato inválido de e-mail");
-        return;
-    }
-
-    // Validar se o e-mail existe nos dados salvos
+function recuperarSenha() {
+    // Obtém o e-mail digitado para recuperação
+    const emailRecuperacao = document.getElementById('email').value;
+  
+    // Obtém a lista de usuários armazenada no localStorage
     const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
-    const usuarioExistente = listaUsuarios.find(usuario => usuario.email === email);
-
-    if (!usuarioExistente) {
-        // Simulação de envio de e-mail de recuperação (substitua por lógica real)
-        alert(`Um e-mail de recuperação foi enviado para ${email}. (Simulação)`);
-// RecuperarSenha.js
-
-const recuperarSenha = () => {
-    const email = document.getElementById("email").value;
-
-    // Validar o formato do e-mail (simplificado)
-    if (!validateEmail(email)) {
-        exibirErroRecuperarSenha("Formato inválido de e-mail");
-        return;
-    }
-
-    // Validar se o e-mail existe nos dados salvos
-    const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
-    const usuarioExistente = listaUsuarios.find(usuario => usuario.email === email);
-
-    if (!usuarioExistente) {
-        // Simulação de envio de e-mail de recuperação (substitua por lógica real)
-        alert(`Um e-mail de recuperação foi enviado para ${email}. (Simulação)`);
-
-        // Redirecionar para a página de login
-        window.location.href = 'Index.html';
+  
+    // Verifica se o e-mail está cadastrado
+    const usuarioRecuperacao = listaUsuarios.find(usuario => usuario.email === emailRecuperacao);
+  
+    if (usuarioRecuperacao) {
+      // E-mail encontrado, simular envio de e-mail de recuperação
+      alert('Foi enviado um e-mail para refazer a senha.');
+  
+      // Redirecionar para a página de login (substitua 'login.html' pelo nome da sua página de login)
+      window.location.href = '../views/Index.html';
     } else {
-        exibirErroRecuperarSenha("E-mail não cadastrado");
+      // E-mail não encontrado, exibir mensagem de erro
+      document.getElementById('erroRecuperarSenha').style.display = 'block';
     }
-};
-
-const validateEmail = (email) => {
-    const regex = /\S+@\S+\.\S+/;
-    return regex.test(email);
-};
-
-const exibirErroRecuperarSenha = (mensagem) => {
-    const erroRecuperarSenha = document.getElementById("erroRecuperarSenha");
-    if (erroRecuperarSenha) {
-        erroRecuperarSenha.innerHTML = mensagem;
-        erroRecuperarSenha.style.display = mensagem ? "block" : "none";
-    }
-};
-// RecuperarSenha.js
-
-const recuperarSenha = () => {
-    const email = document.getElementById("email").value;
-
-    // Validar o formato do e-mail (simplificado)
-    if (!validateEmail(email)) {
-        exibirErroRecuperarSenha("Formato inválido de e-mail");
-        return;
-    }
-
-    // Validar se o e-mail existe nos dados salvos
-    const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
-    const usuarioExistente = listaUsuarios.find(usuario => usuario.email === email);
-
-    if (!usuarioExistente) {
-        // Simulação de envio de e-mail de recuperação (substitua por lógica real)
-        alert(`Um e-mail de recuperação foi enviado para ${email}. (Simulação)`);
-
-        // Redirecionar para a página de login
-        window.location.href = 'Index.html';
-    } else {
-        exibirErroRecuperarSenha("E-mail não cadastrado");
-    }
-};
-
-const validateEmail = (email) => {
-    const regex = /\S+@\S+\.\S+/;
-    return regex.test(email);
-};
-
-const exibirErroRecuperarSenha = (mensagem) => {
-    const erroRecuperarSenha = document.getElementById("erroRecuperarSenha");
-    if (erroRecuperarSenha) {
-        erroRecuperarSenha.innerHTML = mensagem;
-        erroRecuperarSenha.style.display = mensagem ? "block" : "none";
-    }
-};
-
-        // Redirecionar para a página de login
-        window.location.href = 'Index.html';
-    } else {
-        exibirErroRecuperarSenha("E-mail não cadastrado");
-    }
-};
-
-const validateEmail = (email) => {
-    const regex = /\S+@\S+\.\S+/;
-    return regex.test(email);
-};
-
-const exibirErroRecuperarSenha = (mensagem) => {
-    const erroRecuperarSenha = document.getElementById("erroRecuperarSenha");
-    if (erroRecuperarSenha) {
-        erroRecuperarSenha.innerHTML = mensagem;
-        erroRecuperarSenha.style.display = mensagem ? "block" : "none";
-    }
-};
+  }
+  
