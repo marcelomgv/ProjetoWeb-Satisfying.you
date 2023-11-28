@@ -16,6 +16,10 @@ const cadastrarUsuario = (event) => {
   const listaUsuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
   const usuarioExistente = listaUsuarios.find(usuario => usuario.email === email);
 
+  if(email.length == 0 || senha.length == 0 || repsenha.length == 0){
+    exibirMensagemErro("Verifique se todos os campos foram preenchidos");
+    return;
+  }
   if(usuarioExistente){
     exibirMensagemErro("E-mail já cadastrado");
     // Limpar os campos após exibir a mensagem de erro
@@ -24,7 +28,7 @@ const cadastrarUsuario = (event) => {
     document.getElementById("repsenha").value = "";
     return;
   }
-  if (senha !== repsenha) {
+  if(senha !== repsenha) {
     exibirMensagemErro("Senhas não conferem");
     // Limpar os campos após exibir a mensagem de erro
     document.getElementById("senha").value = "";

@@ -1,4 +1,5 @@
 // Index.js
+let userlog;
 
 window.onload = () => {
     document.getElementById("btnEntrar").addEventListener("click", autenticarUsuario);
@@ -15,10 +16,9 @@ window.onload = () => {
     const usuarioAutenticado = listaUsuarios.find(usuario => usuario.email === email && usuario.senha === senha);
   
     if (usuarioAutenticado) {
-        // Credenciais corretas, redirecionar para a página desejada
-        window.location.href = 'Home.html';
-        alert('Login realizado com sucesso!');
-
+      window.localStorage.setItem("userlog", email)
+      // Credenciais corretas, redirecionar para a página desejada
+      window.location.href = 'Home.html';
     } else {
       // Exibir mensagem de erro
       exibirErroLogin("E-mail e/ou senha inválidos");
