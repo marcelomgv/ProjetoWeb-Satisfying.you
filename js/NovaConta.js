@@ -49,8 +49,6 @@ const cadastrarUsuario = (event) => {
 };
 
 window.onload = () => {
-  console.log("Página totalmente carregada.");
-  
   const btnCriar = document.getElementById("btnCriar");
   if (btnCriar) {
     btnCriar.addEventListener("click", cadastrarUsuario);

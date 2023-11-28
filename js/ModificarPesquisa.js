@@ -1,3 +1,5 @@
+let tipoimg = false
+
 const ModificarPesquisa = () => {
     var urlParams = new URLSearchParams(window.location.search)
     const nome = decodeURIComponent(urlParams.get("conteudo"))
@@ -8,7 +10,12 @@ const ModificarPesquisa = () => {
         if(pesquisa.nome == nome){
             pesquisa.nome = document.getElementById("nomepesq").value
             pesquisa.data = document.getElementById("data").value
-            pesquisa.imagem = document.getElementById("imagem-desc").value
+            if(tipoimg){
+                pesquisa.imagem = document.getElementById("image").value
+            }
+            else{
+                pesquisa.imagem = document.getElementById("imagem-desc").value
+            }
             break
         }
     }
@@ -33,26 +40,29 @@ const ApagarPesquisa = () => {
 }
 
 const preview = () => {
-    const imgname = document.getElementById("imagem-desc")
+    const imgname = document.getElementById("imagem-desc").value
     const imgprev = document.getElementById("image")
 
     imgprev.src = imgname
+    tipoimg = false
 }
 
 const previewcar = () => {
-    const imgname = document.getElementById("imagem-desc");
-    const imgprev = document.getElementById("image");
-    const imgcar = document.getElementById("imagem-car");
+    const imgname = document.getElementById("imagem-desc")
+    const imgprev = document.getElementById("image")
+    const imgcar = document.getElementById("imagem-car")
 
     if (imgcar.files && imgcar.files[0]) {
-        var reader = new FileReader();
+        const reader = new FileReader()
 
         reader.onload = (e) => {
-            imgprev.src = e.target.result;
+            imgprev.src = e.target.result
+            imgprev.value = e.target.result
         };
 
-        reader.readAsDataURL(imgcar.files[0]);
+        reader.readAsDataURL(imgcar.files[0])
     }
 
-    imgname.value = imgcar.files[0].name;
+    imgname.value = imgcar.files[0].name
+    tipoimg = true
 }

@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 5%;
+  padding: 2.5vw;
   background-color: #372775;
   color: white;
 }
@@ -18,67 +18,66 @@ header {
 }
 
 #logo {
-  font-size: 3vw;
+  font-size: 4.5vw;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 2%;
   padding:  5%;
 }
 
 form {
-  width: 60%;
+  width: 45%;
   height: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #737373;
-  border-radius: 15px;
-  padding: 5%;
-  font-size: 2vw;
+  border: 0.2vw solid #737373;
+  border-radius: 0.7vw;
+  padding: 3%;
+  font-size: 1.7vw;
 }
 
 .tit {
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
-  margin-bottom: 2vw;
-
 }
 
 .subtit {
-  font-size: 2vw;
+  font-size: 1.8vw;
   text-align: center;
-  margin-bottom: 2vw;
+  margin-bottom: 3vw;
 }
+
 .field {
-  height: 5vw;
-  font-size: 2vw;
+  height: 3vw;
+  font-size: 1.7vw;
 }
 
 .form-invalido {
-  font-size: 2vw;
+  font-size: 1.3vw;
   color: #FD7979;
-  margin-top: 3px;
   display: none;
 }
+
 .boton {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5vw;
+  justify-content: flex-end;
+  margin-top: 6vw;
 }
 
 .btcolor {
-  width: 20vw;
-  height: 5vw;
-  border-radius: 1vw;
+  width: 13vw;
+  height: 4vw;
+  border-radius: 0.7vw;
   background-color: #37BD6D;
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }

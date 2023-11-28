@@ -18,30 +18,30 @@ header {
 }
 
 #logo {
-  font-size: 3vw;
+  font-size: 4.5vw;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
   padding-left: 10%;
   padding-right: 10%;  
 }
 
 form {
-  width: 60%;
+  width: 40%;
   height: auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid #737373;
-  border-radius: 15px;
+  border: 0.2vw solid #737373;
+  border-radius: 0.7vw;
   padding-top: 5%;
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 5%;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .login {
@@ -51,22 +51,18 @@ form {
 }
 
 .field {
-  height: 5vw;
-  font-size: 2vw;
-}
-
-.junt {
-  margin-top: 2px;
+  height: 3vw;
+  font-size: 1.7vw;
 }
 
 .form-invalido {
-  font-size: 2vw;
+  font-size: 1.3vw;
   color: #FD7979;
   float: left;
 }
 
 .form-esqueci {
-  font-size: 2vw;
+  font-size: 1.3vw;
   color: #3F92C5;
   float: right;
   text-decoration: none;
@@ -76,45 +72,24 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 3vw;
+  align-items: center;
+  margin-top: 2.5vw;
 }
 
 .form-criar {
   color: #3F92C5;
-  font-size: 2vw;
+  font-size: 1.7vw;
 }
 
 .btcolor {
-  width: 20vw;
-  height: 5vw;
-  border-radius: 1vw;
+  width: 13vw;
+  height: 4vw;
+  border-radius: 0.7vw;
   background-color: #37BD6D;
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2vw;
-}
-
-/* Adicionada media query para telas pequenas (máximo de 600px) */
-@media only screen and (max-width: 600px) {
-  body {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  form {
-    width: 60%;
-    font-size: 3vw;
-  }
-
-  .field {
-    height: 7vw;
-    font-size: 2vw;
-  }
-
-  .boton {
-    margin-top: 10vw;
-  }
+  font-size: 1.7vw;
 }
