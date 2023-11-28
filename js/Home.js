@@ -1,10 +1,13 @@
 window.onload = () => {
 
+    const user = JSON.parse(window.localStorage.getItem("userlog"))
     const listaPesquisas = JSON.parse(window.localStorage.getItem('listaPesquisas')) || []
 
     if(listaPesquisas.length > 0){
         for(let pesquisa of listaPesquisas){
-            addPesquisa(pesquisa)
+            if(pesquisa.user == user){
+                addPesquisa(pesquisa)
+            }
         }
     }
 

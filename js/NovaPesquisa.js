@@ -1,6 +1,7 @@
 let tipoimg = false
 
 const AdicionarPesquisa = () => { 
+    const user = JSON.parse(window.localStorage.getItem("userlog"))
     const nome = document.getElementById("nomepesq").value
     const data = document.getElementById("data").value
     let imagem;
@@ -14,6 +15,7 @@ const AdicionarPesquisa = () => {
     const listaPesquisas = JSON.parse(window.localStorage.getItem("listaPesquisas")) || [];
 
     listaPesquisas.push({
+        user: user,
         nome: nome,
         data: data,
         imagem: imagem,

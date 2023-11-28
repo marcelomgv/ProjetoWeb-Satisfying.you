@@ -16,7 +16,7 @@ window.onload = () => {
     const usuarioAutenticado = listaUsuarios.find(usuario => usuario.email === email && usuario.senha === senha);
   
     if (usuarioAutenticado) {
-      window.localStorage.setItem("userlog", email)
+      window.localStorage.setItem("userlog", JSON.stringify(email))
       // Credenciais corretas, redirecionar para a página desejada
       window.location.href = 'Home.html';
     } else {
